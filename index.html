@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon API</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script id="digimonCard" type="text/x-handlebars-template">
+        {{#each this}}
+        <div class="card">
+            <div class="left" style="background-image: url('{{img}}');"></div>
+            <div class="right">
+                <h1 class="digimon-name">{{name}}</h1>
+                <p class="level">Level: {{level}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="header-nav-item" id="home-link">Home</a>
+            <a href="#" class="header-nav-item" id="about-link">About</a>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="">
+                <button id="search-button">🔎</button>
+            </div>
+        </nav>
+        <span class="logo">DigiDex</span>
+        <span id="menu"></span>
+    </header>
+
+    <main>
+        <article id="content"></article>
+        <aside>
+            <div class="profile-card">
+                <div class="profile-info">
+                    <p>Created by</p>
+                    <p>Jasen Jaya</p>
+                </div>
+                <div class="socials">
+                    <a href="https://instagram.com/jasen__j" class="icon instagram" target="_blank">
+                        <img src="images/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
+                    </a>
+                    <a href="mailto:jasenjaya2608@gmail.com" class="icon email" target="_blank">
+                        <img src="images/gmail.png" alt="Email" style="width: 24px; height: 24px;">
+                    </a>
+                </div>
+                
+                
+            </div>
+        </aside>
+        <div style="clear: both;"></div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; <span id="yearText"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, purple, blue, black,white, red);
+}
+
+header {
+    background-image: linear-gradient(to bottom right, black,white);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-item {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.header-nav-item:hover {
+    text-decoration: underline;
+    color: #357ABD;
+}
+
+
+#search-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4A90E2; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #357ABD; 
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; 
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #357ABD;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+article {
+    flex: 3;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+}
+
+.profile-card {
+    background: linear-gradient(to bottom right, #5aff08, #4a90e2);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-info {
+    margin-bottom: 20px;
+}
+
+.socials {
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.icon:hover {
+    color: #ffcb05;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom right,  #4a90e2, #fa0505, black,white);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.right {
+    padding: 20px;
+    flex: 1;
+}
+
+.digimon-name {
+    font-size: 24px;
+    margin: 0;
+}
+
+.level {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+}
+
+footer {
+    background: linear-gradient(gray,black);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#yearText {
+    font-weight: 600;
+}
+
+.socials {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.socials a {
+    margin: 0 10px; 
+}
+
+.socials img {
+    width: 24px; 
+    height: 24px; 
+}
